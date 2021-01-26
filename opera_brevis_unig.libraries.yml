@@ -1,0 +1,6 @@
+unig:
+  version: 1.x
+  css:
+    theme:
+      assets/css/opera-brevis-unig.css: {}
+

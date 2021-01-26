@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains opera_brevis_unig.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function opera_brevis_unig_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the opera_brevis_unig module.
+    case 'help.page.opera_brevis_unig':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('UniG-Anpassungen für Operette.ch') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function opera_brevis_unig_theme() {
+  return [
+    'opera_brevis_unig' => [
+      'render element' => 'children',
+    ],
+  ];
+}

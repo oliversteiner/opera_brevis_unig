@@ -1,0 +1,11 @@
+name: 'Opera Brevis UniG'
+type: module
+description: 'UniG customizations for opera brevis'
+core_version_requirement: ^8 || ^9
+package: 'Opera Brevis'
+libraries:
+  - opera_brevis_unig/unig
+
+dependencies:
+  - unig
+  - opera_brevis_module
